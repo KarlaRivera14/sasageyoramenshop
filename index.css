@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+
+/*Main Page*/
+.intro {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;;
+}
+#image {
+    width: 60%;
+    margin: 0%;
+    overflow: hidden;
+    float: left;
+}
+
+ #welcome {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    text-align: center;
+    color: black;
+    height:700px;
+}
+
+#welcome > h2, #welcome > p {
+    margin: 10px 25px 10px 25px;
+    padding: 5px 15px 5px 15px;
+}
+
+#welcome img {
+    margin-bottom: 0px;
+}
+#welcome > h3 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+#welcome > hr {
+    margin-bottom: 25px;
+    width:25%;
+    border: 2px solid #B50D0D;
+}
+
+.offers {
+    text-align:center;
+    display:inline-block;
+    width:100%;
+    height: 550px;
+    margin: 0px;
+    background-image: url('images/kar_image2.png');
+    background-size: cover;
+}
+#box1, #box2, #box3 {
+    margin-top:30px;
+    margin-right:25px;
+    margin-bottom: 35px;
+    margin-left: 25px;
+    width:23%;
+    height: 400px;
+    text-align:center;
+    display:inline-block;   
+    background-color: #E9E9EA;
+    border-radius: 20px;
+}
+
+#box1 h2, #box2 h2, #box3 h2 {
+    margin-top: 5px;
+}
+
+#box1 p, #box2 p, #box3 p {
+    margin: 5px 10px 5px 5px;
+
+}
+#box1 img, #box2 img, #box3 img {
+    margin-top: 25px;
+    margin-bottom: 0px;;
+    text-align: center;
+}
+
+.offers hr {
+    margin-top: 80px;
+    width:40%;
+    border: 2px solid #B50D0D;
+}
+
+.offers button {
+    font-family: 'Cinzel', 'serif';
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+a {
+    text-decoration: none;
+}
+.offers button:hover {
+    background-color: #B50D0D;
+    color: white;
+}
+
+.use-policy {
+    text-align:center;
+    display:inline-block;
+    width:100%;
+    margin-top: 20px;
+}
+
+#aup, #best-viewed {
+    display: block;
+    text-align: center;
+}
+
+/*Mobile Design*/
+
+@media only screen and (max-width : 768px) {
+    #image {
+        display: none;
+    }
+
+    #welcome {
+        display: block;
+        width: auto;
+        background: #171d22;
+        height: auto;
+    }
+    #welcome > h1, #welcome > h2,#welcome > h3, #welcome > p {
+        margin: 10px 25px 10px 25px;
+        padding: 5px 15px 5px 15px;
+        color:#E9E9EA;
+
+    }
+
+    .offers {
+        background-color: #E9E9EA;
+        height: auto;
+    }
+    
+    #box1, #box2, #box3 {
+        margin: auto;
+        width:80%;
+        height: auto;
+        text-align:center;
+        display:block;   
+        background-color: #E9E9EA;
+        border-radius: 20px;
+        color: #171d22;
+    }
+
+   .offers hr {
+        display: none;
+    }
+    
+    .offers button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .use-policy {
+        background-color: #171d22;
+        color: #E9E9EA;
+        margin: auto;
+    }
+    #aup h3, #best-viewed h3, #best-viewed p {
+        margin: 10px;
+    }
+}

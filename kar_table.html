@@ -1,0 +1,130 @@
+<!--
+	Author: Karla Rivera
+	Course:  ITSE2402
+	Date Created:  04/30/2022
+
+    Final Project
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sasageyo Ramen Shop - Locations</title>
+</head>
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="kar_table.css" rel="stylesheet" />
+<link href="kar_sasageyo.css" rel="stylesheet" />
+
+
+<body>
+<!-- Header Section -->
+<div class="header">
+    <img class="logo" alt="logo" src="images/kar_logo.png">
+</div>
+<div id="page-container">
+    <div id="content-wrap">
+        <!-- Navigation -->
+        <div class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="kar_menu.html">Menu</a>
+            <a href="kar_contact.html">Contact</a>
+            <a href="kar_form.html">Order</a>
+            <a href="kar_table.html">Locations</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Recipes</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="kar_links.html#ramen-title">Ramen Recipes</a>
+                  <a href="kar_links.html#dumplings-title">Dumplings Recipes</a>
+                  <a href="kar_links.html#dessert-title">Dessert Recipes</a>
+                </div>
+            </div>
+            <a href="kar_design.html">Design Document</a>
+        </div>
+        <!-- Script for dropdown menu -->
+        <script src="kar_dropdown.js"></script>
+        <!-- Main Section -->
+        <div class="location-header">
+            <h1>LOCATIONS</h1>
+        </div>
+        <div class="contact-title">
+            <h2>Upcoming new locations</h2>
+            <!-- Script for countdown -->
+            <p id="countdown"><script src="kar_countdown.js"></script></p>
+        </div>
+        <div class="contact-title">
+            <h2>Current Locations</h2>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Contact</th>
+                  </tr>
+                  <tr>
+                    <td>7811 Vincent St</td>
+                    <td>Austin</td>
+                    <td>Texas</td>
+                    <td>sasageyo@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>4521 Simmental Rd</td>
+                    <td>Miami</td>
+                    <td>Florida</td>
+                    <td>sasageyoFL@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>5091 Ash Lane</td>
+                    <td>Oklahoma City</td>
+                    <td>Oklahoma</td>
+                    <td>sasageyoOK@gmail.com</td>
+                  </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div id="container1">
+                <img src="images/kar_graphic4.png" alt="ramen" style="width:60px; height:50px">
+                <br>
+                <div id="graphic">
+                    <a href="kar_contact.html"><i style="font-size:20px" class="fa">&#xf0e0;</i></a>
+                </div>
+                <div id="text">
+                    <p id="email">SASAGEYO@GMAIL.COM</p>
+                </div>
+                <div id="links-footer">
+                    <a href="index.html">Home</a>
+                    <a href="kar_menu.html">Menu</a>
+                    <a href="kar_contact.html">Contact</a>
+                    <a href="kar_form.html">Order</a>
+                    <a href="kar_table.html">Locations</a>
+                </div>
+                <div id="links-footer">
+                    <a href="https://www.tccd.edu/">TCC</a>
+                    <a href="kar_design.html">Design Document</a>
+                    <a href="kar_links.html#ramen-title">Ramen Recipes</a>
+                    <a href="kar_links.html#dumplings-title">Dumplings Recipes</a>
+                    <a href="kar_links.html#dessert-title">Dessert Recipes</a>
+                </div>
+                <p> &copy; SASAGEYO RAMEN SHOP</p>
+            </div>
+            <div id="container2">
+                <p>Last Updated: 4/30/2022</p> 
+                <!-- Script to display current Date -->
+                <script>
+                    var date = new Date();
+                    var options = {
+                        weekday: "long", year: "numeric", month: "short",  
+                        day: "numeric", hour: "2-digit", minute: "2-digit"
+                    };
+                    document.write(date.toLocaleTimeString("en-us", options));
+                </script>
+            </div>
+        </div>
+    </div>  
+</div>
+</body>
+</html>

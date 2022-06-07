@@ -1,0 +1,62 @@
+body {
+    background-color: #171d22;
+}
+.design-header {
+    text-align:center;
+    display:inline-block;
+    width:100%;
+    height: 300px;
+    margin: 0px;
+    background-image: url('images/kar_design_header.png');
+    background-size: cover;
+}
+
+.design-header h1 {
+    font-size: 4em;
+    color: #E9E9EA;
+    margin: 110px 0 125px 0;
+}
+
+.design p, .design ul li, .design ol li, .design a {
+    color:#E9E9EA;
+    font-family: 'Nanum Myeongjo';
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.design h2 {
+    margin-top: 35px;
+    margin-left: 15px;
+    color:#E9E9EA;
+}
+
+.design a:visited {
+    color:#E9E9EA;
+    font-family: 'Nanum Myeongjo';
+    margin-left: 15px;
+}
+
+@media only screen and (max-width : 768px) {
+    .design-header {
+        text-align:center;
+        display:block;
+        width:100%;
+        height: 150px;
+        margin: 0%;
+        background-image: url('images/kar_design_header.png');
+        background-size: cover;
+    }
+
+    .design-header h1 {
+        font-size: 2em;
+        color: #E9E9EA;
+        margin: auto;
+        padding: 45px;
+    }
+    .design p {
+        text-align: justify;
+    }
+    .design h2 {
+        text-align: center;
+    }
+}
